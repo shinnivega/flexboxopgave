@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo {
+      width: 100px;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .wireframe {
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      .container {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+
+    .large {
+      grid-row: span 2;
+      height: calc(30vh - 10px);
+    }
+
+    .small {
+      margin-top: 260px;
+      grid-column: 2;
+      height: calc(10vh - 10px);
+    }
+
+    .second-small {
+      margin-top: 260px;
+      grid-column: 1;
+      height: calc(10vh - 10px);
+    }
+
+    .second-large {
+      grid-column: 2;
+      grid-row: span 2;
+      height: calc(30vh - 10px);
+    }
+
+    .bottom-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .bottom-wireframe {
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      .large {
+        display: block;
+        height: 30vh;
+      }
+      .wireframe {
+        margin-top: 0;
+      }
+      .bottom-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      Logo
+    </div>
+    <nav>
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="wireframe large">Large Wireframe 1</div>
+    <div class="wireframe small">Small Wireframe 1</div>
+  </div>
+
+  <div class="container">
+    <div class="wireframe second-small">Small Wireframe 2</div>
+    <div class="wireframe second-large">Large Wireframe 2</div>
+  </div>
+
+  <div class="bottom-container">
+    <div class="wireframe">Bottom Wireframe 1</div>
+    <div class="wireframe">Bottom Wireframe 2</div>
+    <div class="wireframe">Bottom Wireframe 3</div>
+    <div class="wireframe">Bottom Wireframe 4</div>
+    <div class="wireframe">Bottom Wireframe 5</div>
+    <div class="wireframe">Bottom Wireframe 6</div>
+  </div>
+
+  <footer>
+    Footer
+  </footer>
+</body>
+</html>

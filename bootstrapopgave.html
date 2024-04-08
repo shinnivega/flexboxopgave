@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Header Example</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Adjustments for the header */
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+    }
+    /* Adjustments for the frames */
+    .frame {
+      padding: 20px;
+    }
+    .frame img {
+      max-width: 100%;
+    }
+    /* Adjustments for the footer */
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .footer-icons {
+      text-align: center;
+    }
+    .footer-icons i {
+      font-size: 24px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Herning hundekendel</h1>
+        </div>
+        <div class="col text-right">
+          <nav>
+            <ul class="nav justify-content-end">
+              <li class="nav-item"><a class="nav-link" href="#">Forside</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Om os</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Large Frame for Picture -->
+      <div class="col-lg-12 frame">
+        <img src="dog-header-desktop.jpg" alt="Large Image">
+      </div>
+    </div>
+    <div class="row mt-4">
+      <!-- Four Frames Displayed in a Row -->
+      <div class="col-lg-3 frame">
+        <img src="dog-1.jpg" alt="Image 1">
+        <h3>Title 1</h3>
+        <p>Description 1</p>
+        <button class="btn btn-primary">Read More</button>
+      </div>
+      <div class="col-lg-3 frame">
+        <img src="dog-2.jpg" alt="Image 2">
+        <h3>Title 2</h3>
+        <p>Description 2</p>
+        <button class="btn btn-primary">Read More</button>
+      </div>
+      <div class="col-lg-3 frame">
+        <img src="dog-3.jpg" alt="Image 3">
+        <h3>Title 3</h3>
+        <p>Description 3</p>
+        <button class="btn btn-primary">Read More</button>
+      </div>
+      <div class="col-lg-3 frame">
+        <img src="dog-4.jpg" alt="Image 4">
+        <h3>Title 4</h3>
+        <p>Description 4</p>
+        <button class="btn btn-primary">Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="footer-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
